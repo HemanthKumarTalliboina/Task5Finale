@@ -1,0 +1,14 @@
+{
+  "python.defaultInterpreterPath": "/Users/hemanthkumar/Documents/rm1codershub/React/Tasks/Task3Finale/backend/venv/bin/python",
+  "python.analysis.extraPaths": [
+    "/Users/hemanthkumar/Documents/rm1codershub/React/Tasks/Task3Finale/backend",
+    "/Users/hemanthkumar/Documents/rm1codershub/React/Tasks/Task3Finale/backend/app",
+    "/Users/hemanthkumar/Documents/rm1codershub/React/Tasks/Task3Finale/backend/venv/lib/python3.14/site-packages"
+  ],
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.useLibraryCodeForTypes": true,
+  "python.languageServer": "Pylance",
+  "python.terminal.activateEnvironment": true,
+  "python.linting.enabled": true,
+  "python.testing.autoTestDiscoverOnSaveEnabled": false
+}
