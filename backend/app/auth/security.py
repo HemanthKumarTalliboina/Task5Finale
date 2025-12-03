@@ -14,6 +14,7 @@ from app.database import get_db
 from app.models import User
 from app.schemas import TokenData
 
+
 # ---------------- SECURITY SCHEME -----------------
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
@@ -44,8 +45,8 @@ def create_access_token(
 
     encoded_jwt = jwt.encode(
         to_encode,
-        settings.JWT_SECRET_KEY,
-        algorithm=settings.JWT_ALGORITHM,
+        settings.SECRET_KEY,
+        algorithm=settings.ALGORITHM,
     )
     return encoded_jwt
 
@@ -65,8 +66,8 @@ async def get_current_user(
     try:
         payload = jwt.decode(
             token,
-            settings.JWT_SECRET_KEY,
-            algorithms=[settings.JWT_ALGORITHM],
+            settings.SECRET_KEY,
+            algorithms=[settings.ALGORITHM],
         )
         user_id: str | None = payload.get("sub")
         username: str | None = payload.get("username")

@@ -4,6 +4,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 
+#from app.routes.student_routes import router as student_router
 from app.routes.student_routes import router as student_router
 from app.routes.auth_routes import router as auth_router
 

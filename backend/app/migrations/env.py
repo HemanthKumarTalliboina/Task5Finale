@@ -1,3 +1,13 @@
+import sys
+from pathlib import Path
+
+# Add project root to PYTHONPATH
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+
+from app.database import Base
+from app import models
+
+
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
@@ -5,10 +15,6 @@ from sqlalchemy import pool
 
 from alembic import context
 
-# ------------ ADD THIS -------------
-from app.database import Base
-# -----------------------------------
-from app import models
 
 
 # this is the Alembic Config object, which provides
