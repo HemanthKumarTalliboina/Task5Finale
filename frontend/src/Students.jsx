@@ -1,7 +1,8 @@
 // frontend/src/Students.jsx
 
 import { useEffect, useState } from "react";
-import api from "./api";
+import api from "./apiClient";
+
 import { useAuth } from "./AuthContext";
 
 const Students = () => {
