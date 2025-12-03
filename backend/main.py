@@ -17,6 +17,7 @@ app = FastAPI(
 origins = [
     "http://127.0.0.1:5173",
     "http://localhost:5173",
+    "https://task5finale-frontend.onrender.com",  # <-- new frontend URL
     # later add your deployed frontend URL here
     # "https://your-frontend.netlify.app",
 ]
